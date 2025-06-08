@@ -1,0 +1,93 @@
+html {scroll-padding-top: 5.5rem; scroll-behavior: smooth;  }
+
+body {background-color: #ECECEC;}
+
+
+/*Button area*/
+.home-button {text-decoration: none; background-color: burlywood; color: white; padding: 0.6rem 0.8rem ; text-align: center; border-radius: 15px;}   
+
+.home-button:hover {background-color:rgb(250, 145, 6); transform: scale(1.1); transition-duration: 0.8s ;}
+
+/*導覽列*/
+
+#area{display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 1rem ; background-color: burlywood;   height: 5.4rem; position: fixed; z-index: 2; top: 0; left: 0; right: 0; }
+
+ #area-nav {display: flex; list-style: none;  font-weight: 750; padding-right: 3rem;  }
+
+ #area-nav a {text-decoration: none; color: black; font-size: 25px; }
+
+ #area-nav li { padding-right: 3rem;}
+
+ #area nav li:hover {transform: scale(1.15); transition-duration: 0.4s;}
+
+#home{ height: calc(100dvh - 6rem); display: grid; place-items: center; margin-top: 5.6rem; }
+
+#content area{ display: flex; }
+ 
+.container { min-width: 1000px; max-width: 1200px; margin: 0 auto ; padding:3rem 4rem; padding-bottom:0;}
+
+.home-container {display: flex; }
+
+.home-container >* {width:50%;}
+
+.container-left {display: flex; flex-direction: column; justify-content: center; }
+
+
+.home-h1 {font-size: 2.7rem; font-weight: 600; font-family:'Noto Sans TC', 'Noto Sans', sans-serif; text-align: center;}
+
+.home-h2 {font-size: 2rem; font-weight: 100; text-align: center;padding-bottom: 1rem; } 
+
+.home-h2-2 {font-size: 2rem; font-weight: 300; text-align: center;padding-bottom: 1rem;}
+
+
+.container-right {display: flex;  justify-content: center;}
+
+#home-about {display: inline;}
+
+
+
+#about { height: 100dvh ; }
+
+#projects{height: 100dvh; }
+
+#contact{height: 100dvh; }
+
+/*about的關於我*/
+.about-title{font-size:2.7rem; font-weight: 650; text-align: center; position: relative; }
+
+.about-title::after{ content: "";width:3rem;  height: 2px; background-color:#5A4E3C	; position: absolute;  bottom: -0.3rem; left: 50%; translate:-50%; }
+
+
+#about { background-color: burlywood;}
+
+.about-section {display: flex;  }
+
+.about-section >* {width: 50%;}
+
+.about-section p{ padding: 2.9rem;}
+
+.about-left{font-size: 1.3rem; line-height: 2.2rem;}
+
+.about-right{font-size: 1.4rem; padding: 3rem; position: sticky; align-self: flex-start; top: 5.4rem; }
+
+#about-list-section {display: flex; flex-wrap: wrap;  }
+
+#about-list-section li {border: 6px solid white; border-radius: 10px;  background-color: white; list-style: none; max-width: 7rem; 
+    display: flex; justify-content: center; align-items: center;  margin-right: 0.6rem; font-size: 80%;
+}
+
+.project-both {display: grid; grid-template-columns: 6fr 4fr; gap: 2rem; }
+
+.project-image img{border-radius: 200px; } 
+
+.project-1heading { font-size: 1.6rem;  font-weight:630; }
+
+.project-description {color: #5A4E3C; font-size: 1rem; font-weight: 700; }
+
+#project-button { border: 3px solid burlywood; text-decoration: none; color:white ; background-color: burlywood; border-radius: 300px; display: block; width:8rem  ;  text-align: center;  margin: 0.5rem auto; font-size: 20px;  }
+
+#project-button:hover{ background-color:rgb(250, 145, 6); transform: scale(1.1); transition-duration: 0.8s ;}
+
+.project-both + .project-both { margin-top: 4rem; }
+
+.project-image {position: sticky; top: calc(5.4rem + 0.3rem);}
